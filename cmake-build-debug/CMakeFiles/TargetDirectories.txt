@@ -1,0 +1,3 @@
+/home/egerin/Projects/laba_item/cmake-build-debug/CMakeFiles/laba_item.dir
+/home/egerin/Projects/laba_item/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/egerin/Projects/laba_item/cmake-build-debug/CMakeFiles/rebuild_cache.dir
