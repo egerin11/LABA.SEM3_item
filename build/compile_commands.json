@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/egerin/Projects/laba_item/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/laba_item.dir/main.cpp.o -c /home/egerin/Projects/laba_item/main.cpp",
+  "file": "/home/egerin/Projects/laba_item/main.cpp",
+  "output": "CMakeFiles/laba_item.dir/main.cpp.o"
+},
+{
+  "directory": "/home/egerin/Projects/laba_item/build",
+  "command": "/usr/bin/clang++ -g -o CMakeFiles/laba_item.dir/garbage/function.cpp.o -c /home/egerin/Projects/laba_item/garbage/function.cpp",
+  "file": "/home/egerin/Projects/laba_item/garbage/function.cpp",
+  "output": "CMakeFiles/laba_item.dir/garbage/function.cpp.o"
+}
+]
