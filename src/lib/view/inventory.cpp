@@ -105,7 +105,7 @@ bool Inventory::inv_info() {
 
     for (int i = 0; i < item.size(); i++) {
         item[i]->info();
-        std::cout<<std::endl;
+        std::cout << std::endl;
     }
     return true;
 }
@@ -161,6 +161,25 @@ void Inventory::remove() {
     } while (number > inventoryDataModel.get_size() || number <= 0);
     Item *item = inventoryDataModel.get_item_by_id(number);
     inventoryDataModel.delete_item(item);
+
+}
+
+void Inventory::parse() {
+    if (inventoryDataModel.parse_file()) {
+    } else return;
+}
+
+void Inventory::menu() {
+    clear_screen();
+    std::cout << "\tMENU" << std::endl;
+    std::cout << "\tADD 1" << std::endl;
+    std::cout << "\tVIEW 2" << std::endl;
+    std::cout << "\tUPDATE 3" << std::endl;
+    std::cout << "\tREMOVE 4" << std::endl;
+    std::cout << "\tPARSE 5" << std::endl;
+    std::cout << "\tDOP 6" << std::endl;
+    std::cout << "\tEXIT 0" << std::endl;
+
 
 }
 

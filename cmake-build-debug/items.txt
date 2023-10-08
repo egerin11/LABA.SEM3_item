@@ -1,0 +1,4 @@
+weapon sword 1 5 dop_damage 15 20
+potion heal 15 1 immortal heal 20
+resource iron 15 15 medium craft 15
+resource iron 13 11 medium craft 15

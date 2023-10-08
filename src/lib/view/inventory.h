@@ -26,7 +26,12 @@ public:
     void add();
 
     void update();
+
     void remove();
+
+    void parse();
+
+    void menu();
 };
 
 #endif

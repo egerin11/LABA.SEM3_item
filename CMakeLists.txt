@@ -19,4 +19,6 @@ add_executable(laba_item
         src/lib/model/model_cpp/item.cpp
         src/lib/model/model_cpp/weapon.cpp
         src/lib/model/model_cpp/potion.cpp
+        src/dop_task/rail_fence.cpp
+        src/dop_task/rail_fence.h
 )

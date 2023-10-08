@@ -73,8 +73,8 @@ bool InventoryDataModel::delete_item(Item *item) {
         }
     }
 
-    for (int j = 0; j <get_size(); j++) {
-        m_inventory[j]->set_id(j+1);
+    for (int j = 0; j < get_size(); j++) {
+        m_inventory[j]->set_id(j + 1);
 
     }
     return true;
@@ -82,4 +82,45 @@ bool InventoryDataModel::delete_item(Item *item) {
 
 unsigned long InventoryDataModel::get_size() {
     return m_inventory.size();
+}
+
+bool InventoryDataModel::parse_file() {
+    std::string buffer;
+    std::ifstream file;
+    file.open("items.txt");
+    if (file.is_open()) {
+        Item *item;
+        while (getline(file, buffer)) {
+            std::istringstream iss(buffer);
+            std::string name;
+            int max_value;
+            double weight;
+            std::string string1;
+            std::string string2;
+            std::string string3;
+            std::string item_type;
+            if ((iss >> item_type >> name >> max_value >> weight >> string1 >> string2 >> string3)) {
+                if (item_type == "weapon") {
+                    Weapon weapon(name, weight, string1, string2, string3);
+                    item = new Weapon(weapon);
+                } else if (item_type == "potion") {
+                    Potion potion(name, max_value, weight, string1, string2, string3);
+                    item = new Potion(potion);
+                } else if (item_type == "resource") {
+                    Resource resource(name, max_value, weight, string1, string2, string3);
+                    item = new Resource(resource);
+                } else {
+                    file.close();
+                    return false;
+                }
+                add_item(item, max_value);
+
+            }
+        }
+        file.close();
+        return true;
+    } else {
+        file.close();
+        return false;
+    }
 }

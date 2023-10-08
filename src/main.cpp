@@ -1,6 +1,7 @@
 
 
 #include "lib/view/inventory.h"
+#include "lib/dop_task/rail_fence.h"
 
 int main() {
     Inventory inventory;
@@ -8,7 +9,7 @@ int main() {
 
     int number;
     do {
-        clear_screen();
+        inventory.menu();
         number = get_valid_int();
 
         switch (number) {
@@ -23,6 +24,17 @@ int main() {
                 break;
             case 4:
                 inventory.remove();
+                break;
+            case 5:
+                inventory.parse();
+                break;
+            case 6: {
+                RailFence railFence;
+                railFence.input_string();
+                railFence.input_key();
+                railFence.print();
+                railFence.print_decrypt();
+            }
                 break;
             default: {
             }

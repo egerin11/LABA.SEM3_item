@@ -56,7 +56,8 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15
 			]
 		}
 	],
@@ -96,7 +97,8 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15
 			]
 		},
 		{
@@ -109,7 +111,8 @@
 				4,
 				6,
 				8,
-				10
+				10,
+				16
 			]
 		}
 	],
@@ -197,6 +200,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "src/lib/model/model_cpp/potion.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/lib/dop_task/rail_fence.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/lib/dop_task/rail_fence.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
