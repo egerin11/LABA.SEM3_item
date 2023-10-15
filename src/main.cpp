@@ -1,10 +1,11 @@
 
 
 #include "lib/view/inventory.h"
-#include "lib/dop_task/rail_fence.h"
+#include "dop_task/rail_fence.h"
 
 int main() {
     Inventory inventory;
+    RailFence railFence;
 
 
     int number;
@@ -29,7 +30,6 @@ int main() {
                 inventory.parse();
                 break;
             case 6: {
-                RailFence railFence;
                 railFence.input_string();
                 railFence.input_key();
                 railFence.print();

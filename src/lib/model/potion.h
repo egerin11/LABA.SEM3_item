@@ -3,7 +3,7 @@
 
 #include "item.h"
 
-class Potion : public Item {
+class Potion : virtual public Item {
 private:
     std::string m_rarity;
     std::string m_buf;
