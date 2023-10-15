@@ -1,16 +1,14 @@
 # ninja log v5
 1	434	1696716671469555507	CMakeFiles/laba_item.dir/src/garbage/inventory.cpp.o	92fe98120d246509
-401	462	1696798166109220078	laba_item	4996794e98cd70
-1	331	1696797720845136996	CMakeFiles/laba_item.dir/src/main.cpp.o	ee6a719b48787ed6
-1	320	1696777426175658532	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/potion.cpp.o	b6255b4b051334b8
+0	63	1697376305821845375	laba_item	c8e6a1c853b4c19e
+1	608	1697376206019253586	CMakeFiles/laba_item.dir/src/dop_task/rail_fence.cpp.o	b5dbb3e7ed6dd3bb
+1	455	1697376205865921372	CMakeFiles/laba_item.dir/src/main.cpp.o	ee6a719b48787ed6
+2	489	1697376205899254462	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/potion.cpp.o	b6255b4b051334b8
 1	401	1696798166049220349	CMakeFiles/laba_item.dir/src/lib/dop_task/rail_fence.cpp.o	e692970894d4f113
-1	360	1696777426215658394	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/resource.cpp.o	f2ff9b782c2c9191
-1	428	1696789136285679658	CMakeFiles/laba_item.dir/src/lib/data_model/inventory_data_model.cpp.o	6e1f11c586ef314
-1	390	1696789745502545171	CMakeFiles/laba_item.dir/src/lib/view/inventory.cpp.o	53bfb354bc3152bc
-1	320	1696776974707549987	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/item.cpp.o	881f44206a1c1451
-1	322	1696776974710883309	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/weapon.cpp.o	8bde5777a42807b0
-0	339	1696794457375726628	CMakeFiles/laba_item.dir/src/garbage/function.cpp.o	bcbb9e8b249c7ffe
-1	505	1696848556533135603	CMakeFiles/laba_item.dir/src/lib/view/inventory.cpp.o	53bfb354bc3152bc
-0	513	1696848556539802233	CMakeFiles/laba_item.dir/src/dop_task/rail_fence.cpp.o	b5dbb3e7ed6dd3bb
-1	370	1696848667829191538	CMakeFiles/laba_item.dir/src/main.cpp.o	ee6a719b48787ed6
-370	483	1696848667939190935	laba_item	692bb869bf6b7063
+0	29	1697376316395098773	build.ninja	65923ed082303218
+2	365	1697376205775922030	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/resource.cpp.o	f2ff9b782c2c9191
+2	657	1697376206065919912	CMakeFiles/laba_item.dir/src/lib/data_model/inventory_data_model.cpp.o	6e1f11c586ef314
+1	492	1697376205902587771	CMakeFiles/laba_item.dir/src/lib/view/inventory.cpp.o	53bfb354bc3152bc
+2	20	1697376205432591203	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/item.cpp.o	881f44206a1c1451
+2	374	1697376205785921957	CMakeFiles/laba_item.dir/src/lib/model/model_cpp/weapon.cpp.o	8bde5777a42807b0
+1	532	1697376205942587479	CMakeFiles/laba_item.dir/src/garbage/function.cpp.o	bcbb9e8b249c7ffe

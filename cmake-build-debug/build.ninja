@@ -79,12 +79,6 @@ build CMakeFiles/laba_item.dir/src/lib/model/model_cpp/resource.cpp.o: CXX_COMPI
   OBJECT_DIR = CMakeFiles/laba_item.dir
   OBJECT_FILE_DIR = CMakeFiles/laba_item.dir/src/lib/model/model_cpp
 
-build CMakeFiles/laba_item.dir/src/lib/model/model_cpp/item.cpp.o: CXX_COMPILER__laba_item_unscanned_Debug /home/egerin/Projects/laba_item/src/lib/model/model_cpp/item.cpp || cmake_object_order_depends_target_laba_item
-  DEP_FILE = CMakeFiles/laba_item.dir/src/lib/model/model_cpp/item.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/laba_item.dir
-  OBJECT_FILE_DIR = CMakeFiles/laba_item.dir/src/lib/model/model_cpp
-
 build CMakeFiles/laba_item.dir/src/lib/model/model_cpp/weapon.cpp.o: CXX_COMPILER__laba_item_unscanned_Debug /home/egerin/Projects/laba_item/src/lib/model/model_cpp/weapon.cpp || cmake_object_order_depends_target_laba_item
   DEP_FILE = CMakeFiles/laba_item.dir/src/lib/model/model_cpp/weapon.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
@@ -111,7 +105,7 @@ build CMakeFiles/laba_item.dir/src/dop_task/rail_fence.cpp.o: CXX_COMPILER__laba
 #############################################
 # Link the executable laba_item
 
-build laba_item: CXX_EXECUTABLE_LINKER__laba_item_Debug CMakeFiles/laba_item.dir/src/main.cpp.o CMakeFiles/laba_item.dir/src/garbage/function.cpp.o CMakeFiles/laba_item.dir/src/lib/data_model/inventory_data_model.cpp.o CMakeFiles/laba_item.dir/src/lib/view/inventory.cpp.o CMakeFiles/laba_item.dir/src/lib/model/model_cpp/resource.cpp.o CMakeFiles/laba_item.dir/src/lib/model/model_cpp/item.cpp.o CMakeFiles/laba_item.dir/src/lib/model/model_cpp/weapon.cpp.o CMakeFiles/laba_item.dir/src/lib/model/model_cpp/potion.cpp.o CMakeFiles/laba_item.dir/src/dop_task/rail_fence.cpp.o
+build laba_item: CXX_EXECUTABLE_LINKER__laba_item_Debug CMakeFiles/laba_item.dir/src/main.cpp.o CMakeFiles/laba_item.dir/src/garbage/function.cpp.o CMakeFiles/laba_item.dir/src/lib/data_model/inventory_data_model.cpp.o CMakeFiles/laba_item.dir/src/lib/view/inventory.cpp.o CMakeFiles/laba_item.dir/src/lib/model/model_cpp/resource.cpp.o CMakeFiles/laba_item.dir/src/lib/model/model_cpp/weapon.cpp.o CMakeFiles/laba_item.dir/src/lib/model/model_cpp/potion.cpp.o CMakeFiles/laba_item.dir/src/dop_task/rail_fence.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/laba_item.dir
   POST_BUILD = :

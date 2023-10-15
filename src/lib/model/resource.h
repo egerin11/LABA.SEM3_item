@@ -25,7 +25,8 @@ public:
 
     void info() const override;
 
-
+    void set_max_value(int max_value) override;
+    int get_max_value() const override;
     int get_id() const override;
 
     void set_id(int id) override;

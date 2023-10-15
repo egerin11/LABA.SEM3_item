@@ -24,7 +24,8 @@ public:
     std::string get_type_item() const override;
 
     void info() const override;
-
+    void set_max_value(int max_value) override;
+    int get_max_value() const override;
 
     int get_id() const override;
 

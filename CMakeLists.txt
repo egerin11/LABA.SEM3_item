@@ -16,7 +16,6 @@ add_executable(laba_item
         src/lib/view/inventory.cpp
         src/lib/view/inventory.h
         src/lib/model/model_cpp/resource.cpp
-        src/lib/model/model_cpp/item.cpp
         src/lib/model/model_cpp/weapon.cpp
         src/lib/model/model_cpp/potion.cpp
         src/dop_task/rail_fence.cpp

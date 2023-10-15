@@ -3,7 +3,7 @@
 
 #include "item.h"
 
-class Potion : virtual public Item {
+class Potion :  public Item {
 private:
     std::string m_rarity;
     std::string m_buf;
@@ -24,8 +24,8 @@ public:
             m_treatment(treatment) {}
 
     void info() const override;
-
-
+    void set_max_value(int max_value) override;
+    int get_max_value() const override;
     int get_id() const override;
 
     std::string get_type_item() const override;

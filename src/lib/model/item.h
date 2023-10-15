@@ -10,20 +10,18 @@ public:
             m_max_value(item_max_value),
             m_weight(item_weight), m_id(0), m_type_item(type_item) {};
 
-    virtual void info() const;
+    virtual void info() const=0;
 
-    virtual int get_id() const;
+    virtual int get_id() const=0;
 
-    virtual void set_id(int id);
+    virtual void set_id(int id) =0;
 
-    int get_max_value() const;
+    virtual int get_max_value() const=0;
 
-    virtual std::string get_type_item() const {
-        return m_type_item;
-    }
+    virtual std::string get_type_item() const=0;
 
 
-    void set_max_value(int item_max_value);
+   virtual void set_max_value(int item_max_value)=0;
 
     bool operator==(const Item &other) {
         return m_type_item == other.m_type_item &&
