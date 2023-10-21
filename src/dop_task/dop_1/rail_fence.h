@@ -4,7 +4,7 @@
 
 #include<iostream>
 #include<vector>
-#include "../lib/function.h"
+#include "../../lib/function.h"
 
 class RailFence {
 public:

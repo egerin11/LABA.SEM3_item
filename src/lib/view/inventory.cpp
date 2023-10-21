@@ -178,6 +178,7 @@ void Inventory::menu() {
     std::cout << "\tREMOVE 4" << std::endl;
     std::cout << "\tPARSE 5" << std::endl;
     std::cout << "\tDOP 6" << std::endl;
+    std::cout << "\tDOP SECOND 7" << std::endl;
     std::cout << "\tEXIT 0" << std::endl;
 
 
