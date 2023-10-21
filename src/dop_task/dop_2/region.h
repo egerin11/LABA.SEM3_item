@@ -32,7 +32,7 @@ private:
     bool input_borden_map(std::vector<std::vector<int>> &chosen, int n, int i, int j, int k, int &volume_of_zone,
                           bool first);
 
-    int count_winner(std::vector<int> &);
+    std::pair<int,int> count_winner(std::vector<int> &);
 
 
     int generate_rand(int min, int max);

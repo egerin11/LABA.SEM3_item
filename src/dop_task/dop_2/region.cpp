@@ -48,7 +48,7 @@ void Region::print_map(std::vector<std::vector<int>> &map) {
 
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < row; j++) {
-            std::cout  << abs(map[i][j]) << " ";
+            std::cout << abs(map[i][j]) << " ";
         }
         std::cout << std::endl;
     }
@@ -145,29 +145,37 @@ std::vector<int> Region::count_politish_voices(std::vector<std::vector<int>> &ma
 
 void Region::pint_voices(std::vector<int> &voices) {
     for (int i = 0; i < num_politish; i++) {
-        std::cout << "politish " << i + 1 <<" "<< voices[i] << std::endl;
+        std::cout << "politish " << i + 1 << " " << voices[i] << std::endl;
     }
 
 }
 
-int Region::count_winner(std::vector<int> &voices) {
+std::pair<int, int> Region::count_winner(std::vector<int> &voices) {
+    std::pair<int, int> pair;
     int max = voices[0];
-    int count = 0;
+    int count = 1;
     int temp = 0;
-    for (int i = 0; i < num_politish; i++) {
+    for (int i = 1; i < num_politish; i++) {
         if (voices[i] > max) {
             max = voices[i];
             count = 1;
             temp = i;
+
         } else if (max == voices[i]) count++;
     }
-    if (count == 1) return temp;
-    else return 0;
+
+
+    pair.first=temp;
+    pair.second=count;
+    return pair;
 
 }
 
 void Region::print_winner(std::vector<int> &voices) {
-    int check = count_winner(voices);
-     std::cout<<"winner politish "<<check+1<<" "<<"his voices "<<" "<<voices[check]<<std::endl;
+    std::pair<int,int> pair= count_winner(voices);
+
+    if (pair.second == 1)
+        std::cout << "winner politish " << pair.second + 1 << " " << "his voices " << " " << voices[pair.first] << std::endl;
+    else std::cout << "будет парламент" << std::endl;
 }
 
